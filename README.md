@@ -11,7 +11,7 @@
 ## Sobre o projeto
 
  Nesse projeto trabalhamos com uma api da marvel que pode ser utilizada para podermos brincamos e desenvolvemos novas possibilidades.
- Aqui trabalhamos com páginação, busca e mostrar os detalhes sobre os herois.
+ Aqui trabalhamos com páginação, busca e mostrar os detalhes sobre os heroes.
 
 <br/>
 
@@ -54,7 +54,7 @@ yarn start
 
 ## API Marvel
 
-Caso não liste os herois acesse o site <a href="https://developer.marvel.com/">Marvel</a> e crie a sua chave para acesso e modifique o arquivo token.ts em serveces.
+Caso não liste os heroes acesse o site <a href="https://developer.marvel.com/">Marvel</a> e crie a sua chave para acesso e modifique o arquivo token.ts em serveces.
 
 
 <br />
