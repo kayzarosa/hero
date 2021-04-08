@@ -108,7 +108,7 @@ export const CharactersContainer = styled.section`
     height: 10rem;
     background: var(--color-background-menu);
     
-    height: 8.8.rem;
+    height: 8.8rem;
     cursor: pointer;
 
     td {
