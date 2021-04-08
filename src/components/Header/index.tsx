@@ -1,24 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { FcBiotech } from "react-icons/fc";
+import logo from '../../assets/logo.jpeg';
 
-import { ContainerMenu, NomeRestaurante, NomeRestauranteMobile } from './styles';
+import { ContainerMenu } from './styles';
 
 const Header: React.FC = () => {
 
   return (
     <ContainerMenu>
       <Link className="logotipo" to="/">
-        <FcBiotech size={50} />
-        <NomeRestaurante>
-          <h2>Hero</h2>
-        </NomeRestaurante>
+        <img src={logo} alt="Objective" />
       </Link>
 
-      <NomeRestauranteMobile>
-        <h2>Hero</h2>
-      </NomeRestauranteMobile>
+      <div>
+        <span className="nome">Kayza</span>
+        <span>Teste de Front-End</span>
+        <span className="cb">CB</span>
+      </div>
 
     </ContainerMenu>
   );

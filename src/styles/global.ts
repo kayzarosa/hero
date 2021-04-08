@@ -2,19 +2,22 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root {
-    --color-background-menu: #0c070e;
-    --color-background: #f5f3f3;
+    --color-background-menu: #FFFFFF;
+    --color-background: #E5E5E5;
+    --color-border: #E5E5E5;
     --color-title-in-primary: #fffafa;
     --background-personagem-lista: #fffafa;
-    --color-text-titulo-personagem: #3d3d4d;
+    --color-text-titulo-personagem: #555555;
     --background-imagem-personagem: #0c070e;
-    --color-text-descricao-personagem: #3d3d4d;
-    --color-text-series: #000000;
-    --color-background-second: #fffafa;
+    --color-text-descricao-personagem: #555555;
+    --color-text-series: #555555;
+    --color-background-second: #FFFFFF;
     --color-title-in-segundary: #232129;
     --color-background-input: #232129;
     --color-background-input-segundary: #fffafa;
-    --color-text-input: #666360;
+    --color-text-input: #8E8E8E;
+    --color-text-header: #8E8E8E;
+    --color-linha-tabela-even: 
     --color-text-input-segundary: #000000
     --color-image-input: #ff9000;
     --color-border-focus-input: #ff9000;
@@ -26,6 +29,11 @@ export default createGlobalStyle`
     --color-text-menu: #fffafa;
     --color-button: #ff9000;
     --color-button-desabilitado: #ff90007a;
+    --background-pagination: #F5F5F5;
+    --color-button-active: #FFFFFF;
+    --background-active: #167ABC;
+    --color-linha-tabela-even: #fff;
+    --color-linha-tabela-odd: #eee;
 
     font-size: 60%;
   }
@@ -54,7 +62,7 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea, select {
-    font-family: 'Roboto Silab', serif;
+    font-family: 'PT Sans Caption', serif;
     font-size: 1.6rem;
   }
 

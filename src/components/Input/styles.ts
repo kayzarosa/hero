@@ -17,7 +17,7 @@ export const Container = styled.div<ContainerProps>`
   padding: 1.6rem;
   width: 100%;
 
-  border: 0.2rem solid var(--color-background-input);
+  /* border: 0.2rem solid var(--color-background-input); */
   color: var(--color-text-input);
 
   display: flex;

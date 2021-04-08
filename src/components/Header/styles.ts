@@ -1,17 +1,8 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const fade = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-export const ContainerMenu = styled.nav`
+export const ContainerMenu = styled.div`
   background: var(--color-background-menu);
-  height: 13rem;
+  height: 6.4rem;
   width: auto;
   margin: 0;
   padding: 0;
@@ -20,70 +11,31 @@ export const ContainerMenu = styled.nav`
   align-items: center;
 
   img {
-    width: 12rem;
-    height: 12rem;
+    width: 9.6rem;
+    height: 2.4rem;
     padding: 0;
-    margin-left: 15rem;
+    margin-left: 2.4rem;
   }
 
   .logotipo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 10rem;
-  }
-
-  a {
-    text-decoration: none;
-    font-weight: 700;
-    font: 'Roboto Silab', serif;
-    font-size: 1.7rem;
-    color: var(--color-text-menu);
-  }
-
-  .menu-mobile {
-    display: none;
-  }
-
-  .menu-mobile-click {
-    display: none;
+    margin-left: 1rem;
   }
 
   @media (max-width: 1494px) {
     height: 11rem;
-    body {
-      background: var(--color-background-second);
-    }
 
     position: relative;
     z-index: 9999;
 
     img {
       position: absolute;
-      width: 10rem;
-      height: 10rem;
+      width: 9.6rem;
+      height: 2.4rem;
       margin-left: 1rem;
       padding: 0;
-    }
-
-    .menu-mobile {
-      content: "";
-      animation: ${fade} 0.2s ease-out;
-      display: block;
-      position: absolute;
-      top: calc(25% - 2px);
-      right: 2rem;
-      color: var(--color-background-second);
-      cursor: pointer;
-    }
-
-    .menu-mobile-click {
-      content: "";
-      position: absolute;
-      top: calc(25% - 2px);
-      right: 2rem;
-      color: var(--color-background-second);
-      cursor: pointer;
     }
 
     .logotipo {
@@ -98,64 +50,45 @@ export const ContainerMenu = styled.nav`
   *:before, *:after {
     box-sizing: inherit;
   }
-`;
 
-export const NomeRestaurante = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-left: 2rem;
-
-  h2 {
-    font-style: normal;
-    font-weight: 700;
-  }
-
-  span {
-    margin-left: 1.5rem;
-    font-family: 'Poppins-Regular';
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 500;
+  div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-  }
-
-  @media (max-width: 1494px) { 
-    width: 50%;
+    margin-right: 2rem;
     position: absolute;
-    margin-left: 32%;
-    
-    h2 {
-      font-size: 2rem;
-    }
 
     span {
-      font-size: 1.6rem;
+      font-style: normal;
+      font-family: "PT Sans Caption", sans-serif;
+      font-size: 2rem;
+      margin-right: 1rem;
     }
-  }
-`;
 
-export const NomeRestauranteMobile = styled.div`
-  display: none;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-left: 2rem;
-  position: absolute;
+    span.cb {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      border-radius: 1rem;
+      font-weight: 600;
+      width: 3.2rem;
+      height: 3.2rem;
+      background: #F5F5F5 0% 0% no-repeat padding-box;
+      color: #555555;
+      opacity: 1;
+    }
 
-  h2 {
-    font-style: normal;
-    font-weight: 700;
-  }
+    span.nome {
+      font-weight: 600;
+    }
 
-  @media (max-width: 1494px) { 
-    display: none;
+    @media (max-width: 1494px) { 
+      span {
+        font-size: 1.4rem;
+      }
+
+    }
   }
 `;

@@ -11,6 +11,7 @@ interface IPagination {
   totalButtonsVisible: number;
   offset: number;
   serchCharactersPaginete: (offset: number) => void;
+  className?: string;
 }
 
 interface IPage {
@@ -22,7 +23,8 @@ const Pagination: React.FC<IPagination> = ({
   total,
   offset,
   totalButtonsVisible,
-  serchCharactersPaginete
+  serchCharactersPaginete,
+  className
 }) => {
   const [currentPage, setCurrentPage] = useState(offset ? offset / limit + 1 : 1);
   const [totalPages, setTotalPages] = useState(Math.ceil(total / limit));
@@ -157,13 +159,17 @@ const Pagination: React.FC<IPagination> = ({
   }, [offset]);
 
   return (
-    <PaginationView>
-      <div className="first" onClick={() => { goTo(1) }}>
-        <FiChevronsLeft size={18} />
-      </div>
-      <div className="prev" onClick={prev}>
-        <FiChevronLeft size={18} />
-      </div>
+    <PaginationView className={className}>
+      {currentPage !== 1 &&
+        <>
+          <div className="first" onClick={() => { goTo(1) }}>
+            <FiChevronsLeft size={18} />
+          </div>
+          <div className="prev" onClick={prev}>
+            <FiChevronLeft size={18} />
+          </div>
+        </>
+      }
       <div className="numbers">
         {numbersPages.length > 0 && numbersPages.map((numberPage, index) =>
           <div key={index}
